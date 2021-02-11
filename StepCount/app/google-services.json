@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "627756126127",
+    "firebase_url": "https://otpverification-84016.firebaseio.com",
+    "project_id": "otpverification-84016",
+    "storage_bucket": "otpverification-84016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627756126127:android:4941c6791a0f374164e95a",
+        "android_client_info": {
+          "package_name": "com.pritha.www.otpverification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627756126127-95dupd4vuvi4dg9uunhvagqsf5rn6b9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pritha.www.otpverification",
+            "certificate_hash": "6a65fcbfa747f2f2af04a98ebd67ab793135323b"
+          }
+        },
+        {
+          "client_id": "627756126127-ekd739vevar4ucggoggsofqvi6gro5br.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pritha.www.otpverification",
+            "certificate_hash": "5e77d91a7204bd8542dd86221f6e6025581e1f25"
+          }
+        },
+        {
+          "client_id": "627756126127-h8kqlf522tvktpr5j9ulrt771n0ah56l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pritha.www.otpverification",
+            "certificate_hash": "566c39d827b3f449fa42e82a08d8eda08a016e79"
+          }
+        },
+        {
+          "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzJgd_Ot3CWw5zxzYFKJGNHRNXLnGY-cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627756126127:android:f9aad392838dad5f64e95a",
+        "android_client_info": {
+          "package_name": "com.pritha.www.stepcount"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzJgd_Ot3CWw5zxzYFKJGNHRNXLnGY-cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627756126127:android:1bebf40c3287c58564e95a",
+        "android_client_info": {
+          "package_name": "com.pritha.www.stepcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzJgd_Ot3CWw5zxzYFKJGNHRNXLnGY-cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627756126127:android:79443a9a73270ce564e95a",
+        "android_client_info": {
+          "package_name": "org.mesibo.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzJgd_Ot3CWw5zxzYFKJGNHRNXLnGY-cY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627756126127-igvap01mpj6dmipftlul254frt189gt7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

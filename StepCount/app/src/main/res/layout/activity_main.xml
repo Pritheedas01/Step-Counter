@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#402196F3"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/dataview"
+        android:layout_width="100dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:text="View Data" />
+
+
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="240dp">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/log"></ImageView>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#00FFFFFF"
+            android:text="Logout"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout"
+        android:layout_marginTop="117dp"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/footstep"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_steps"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="Steps"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="397dp"
+        android:layout_below="@+id/logout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        tools:progress="60" />
+
+    <LinearLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/play"
+            android:layout_width="155dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/play"
+                android:layout_marginLeft="12dp"></ImageView>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:text="start"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/stop"></ImageView>
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:text="stop"
+                android:onClick="stopService"
+                android:textColor="#F44336"
+                android:textSize="22sp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_below="@+id/progress_bar"
+        android:gravity="center"
+        android:id="@+id/details"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Kals"
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:padding="18dp"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/calories"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_cal"
+                android:layout_width="190dp"
+                android:layout_height="18dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="Calories"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Kals"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Kms"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/distance"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:text="Kms"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="Kms"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:layout_marginTop="182dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Goals"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/Set_goals"
+                android:layout_width="140dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/border2"
+            android:text="Set" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
